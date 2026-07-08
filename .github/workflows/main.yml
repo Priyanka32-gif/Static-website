@@ -17,7 +17,7 @@ jobs:
           aws-region: us-east-1
       - name: Deploy Website to S3
         run: |
-          aws s3 sync . s3://host-static-website4  \
+          aws s3 sync . s3://host-static-website5 \
             --delete \
             --exclude ".git/*" \
             --exclude ".github/*"
