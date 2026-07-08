@@ -22,7 +22,7 @@ jobs:
 
       - name: Deploy Website to S3
         run: |
-          aws s3 sync . s3://host-static-website3\static-website-aws \
+          aws s3 sync . s3://host-static-website3 \
             --delete \
             --exclude ".git/*" \
             --exclude ".github/*"
